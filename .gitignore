@@ -26,3 +26,6 @@ pids
 
 # Rhezusport files (these should be in version control for projects)
 # rhezusport.json
+
+# Packed files
+*.tgz

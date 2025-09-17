@@ -1,0 +1,27 @@
+# Test files
+test.js
+test-*.js
+benchmark.js
+performance-test.js
+test-*.js
+
+# Example project
+example-project/
+
+# Documentation files that aren't needed in the package
+docs/
+
+# Log files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git/
+.gitignore

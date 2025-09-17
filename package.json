@@ -1,10 +1,10 @@
 {
-  "name": "bluecore",
-  "version": "1.0.0",
-  "description": "Package management optimization tool that reuses existing packages on your system",
+  "name": "bluecore-pkg",
+  "version": "1.2.0",
+  "description": "Package management optimization tool that reuses existing packages on your system with advanced multithreaded search",
   "main": "index.js",
   "bin": {
-    "bluecore": "./index.js"
+    "bluecore": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +19,9 @@
     "yarn",
     "optimization",
     "dependency",
-    "reuse"
+    "reuse",
+    "multithreaded",
+    "performance"
   ],
   "author": "Lily",
   "license": "MIT",
@@ -33,10 +35,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/your-username/bluecore.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/your-username/bluecore/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/your-username/bluecore#readme"
 }

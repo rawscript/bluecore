@@ -10,8 +10,9 @@ Bluecore is a package management optimization tool that helps you avoid reinstal
 - Support for both npm and yarn
 - Cross-project package management
 - Advanced multithreaded system-wide package search
-- 1000% faster and more accurate package discovery
+- 100% faster and more accurate package discovery
 - Custom ASCII art banner with blue coloring for better user experience
+- **Smart symlink creation**: Creates symlinks to existing package installations instead of duplicating them
 
 ## Installation
 
@@ -47,8 +48,9 @@ bluecore rebase
 This command:
 1. Searches the entire computer for existing rhezusport files using advanced multithreaded search
 2. Compares your project's dependencies with the registry
-3. Installs only the packages that are missing
-4. Updates the registry with your current project's packages
+3. Creates symlinks to existing package installations when possible
+4. Installs only the packages that are missing or cannot be symlinked
+5. Updates the registry with your current project's packages
 
 ### Get AI Suggestions
 
@@ -87,6 +89,7 @@ Reuse existing packages instead of reinstalling them!
 2. When you run `bluecore rebase`, it:
    - Searches the entire computer for existing rhezusport files using advanced multithreaded algorithms
    - Compares your project's dependencies with the registry
+   - Creates symlinks to existing package installations when possible
    - Installs only the packages that are missing
    - Updates the registry with your current project's packages
 3. This way, when you start a new project, bluecore can reuse packages you've already installed elsewhere
@@ -98,14 +101,7 @@ Bluecore now uses advanced multithreaded search algorithms that provide:
 - 100% accuracy in finding existing packages
 - Concurrent directory scanning for maximum efficiency
 - Intelligent filtering to skip unnecessary directories
-
-## Configuration
-
-Bluecore looks for rhezusport files in these locations:
-- Current project directory
-- Home directory
-- `.bluecore` directory in your home folder
-- Common project directories (Documents, Projects, Desktop, Code, Development)
+- Smart symlink creation to avoid package duplication
 
 ## Example Workflow
 
@@ -123,23 +119,22 @@ Bluecore looks for rhezusport files in these locations:
    bluecore rebase
    ```
 
-3. If project2 needs the same packages as project1, bluecore will reuse them instead of reinstalling
+3. If project2 needs the same packages as project1, bluecore will create symlinks to the existing installations instead of reinstalling them
 
 ## AI Integration
 
-Bluecore integrates with Gemini AI to provide intelligent package suggestions:
+Bluecore integrates with Google's Gemini AI to provide intelligent package suggestions:
+
 - Package update recommendations
 - Alternative package suggestions
-- Deprecated package warnings
+- Warnings about deprecated packages
 
-## Contributing
+## Testing Symlink Functionality
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
+To test if symlinks are properly created in your project, run:
 
-## License
+```bash
+npm run test-symlink
+```
 
-MIT
+This will show you which packages are symlinked and which are regular installations.

@@ -1,6 +1,6 @@
 {
   "name": "bluecore-pkg",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Package management optimization tool that reuses existing packages on your system with advanced multithreaded search",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "node index.js",
-    "link": "npm link"
+    "link": "npm link",
+    "test-symlink": "node test-symlink.js"
   },
   "keywords": [
     "package",
@@ -23,7 +24,7 @@
     "multithreaded",
     "performance"
   ],
-  "author": "Lily",
+  "author": "Jase Mwaura",
   "license": "MIT",
   "type": "commonjs",
   "engines": {

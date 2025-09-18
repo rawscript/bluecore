@@ -87,7 +87,8 @@ function updateRhezusportWithCurrentPackages(registry) {
     if (!registry[pkg].versions[version]) {
       registry[pkg].versions[version] = {
         locations: [process.cwd()],
-        lastUsed: new Date().toISOString()
+        lastUsed: new Date().toISOString(),
+        installPaths: [] // Initialize install paths array
       };
     } else {
       // Update last used timestamp
@@ -97,6 +98,16 @@ function updateRhezusportWithCurrentPackages(registry) {
       if (!registry[pkg].versions[version].locations.includes(process.cwd())) {
         registry[pkg].versions[version].locations.push(process.cwd());
       }
+    }
+    
+    // Add the actual installation path for this package
+    const installPath = path.join(process.cwd(), 'node_modules', pkg);
+    if (!registry[pkg].versions[version].installPaths) {
+      registry[pkg].versions[version].installPaths = [];
+    }
+    
+    if (!registry[pkg].versions[version].installPaths.includes(installPath)) {
+      registry[pkg].versions[version].installPaths.push(installPath);
     }
   }
   
@@ -168,7 +179,17 @@ async function handleRebase() {
       missingPackages[pkg] = version;
       console.log(`Package ${pkg}@${version} is missing and needs to be installed`);
     } else {
-      console.log(`Package ${pkg}@${version} already exists in registry, skipping installation`);
+      console.log(`Package ${pkg}@${version} already exists in registry, checking for symlink possibility...`);
+      
+      // Check if we have installation paths for this package
+      if (existingPackages[pkg].versions[version].installPaths && 
+          existingPackages[pkg].versions[version].installPaths.length > 0) {
+        console.log(`Package ${pkg}@${version} can be symlinked from existing installation`);
+      } else {
+        // If no installation path, we still need to install it
+        missingPackages[pkg] = version;
+        console.log(`Package ${pkg}@${version} needs to be installed (no valid installation path found)`);
+      }
     }
   }
   
@@ -179,10 +200,10 @@ async function handleRebase() {
     console.log('AI suggestions:', JSON.stringify(suggestions, null, 2));
   }
   
-  // Install missing packages
-  if (Object.keys(missingPackages).length > 0) {
-    console.log('Installing missing packages...');
-    installPackages(missingPackages);
+  // Install missing packages or create symlinks
+  if (Object.keys(missingPackages).length > 0 || Object.keys(existingPackages).length > 0) {
+    console.log('Installing missing packages or creating symlinks...');
+    installPackages(missingPackages, existingPackages);
   } else {
     console.log('All required packages are already available!');
   }

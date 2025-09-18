@@ -1,0 +1,274 @@
+{
+  "@dataconnect/generated": {
+    "versions": {
+      "file:src/dataconnect-generated": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.875Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\@dataconnect\\generated"
+        ]
+      }
+    }
+  },
+  "@supabase/supabase-js": {
+    "versions": {
+      "^2.47.10": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.875Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\@supabase\\supabase-js"
+        ]
+      }
+    }
+  },
+  "cors": {
+    "versions": {
+      "^2.8.5": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.875Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\cors"
+        ]
+      }
+    }
+  },
+  "dotenv": {
+    "versions": {
+      "^16.4.5": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.875Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\dotenv"
+        ]
+      }
+    }
+  },
+  "express": {
+    "versions": {
+      "^4.21.2": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.875Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\express"
+        ]
+      }
+    }
+  },
+  "firebase": {
+    "versions": {
+      "^12.2.1": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.875Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\firebase"
+        ]
+      }
+    }
+  },
+  "helmet": {
+    "versions": {
+      "^7.1.0": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\helmet"
+        ]
+      }
+    }
+  },
+  "morgan": {
+    "versions": {
+      "^1.10.0": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\morgan"
+        ]
+      }
+    }
+  },
+  "shadcn": {
+    "versions": {
+      "^3.2.1": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\shadcn"
+        ]
+      }
+    }
+  },
+  "zod": {
+    "versions": {
+      "^3.23.8": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\zod"
+        ]
+      }
+    }
+  },
+  "@types/cors": {
+    "versions": {
+      "^2.8.17": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\@types\\cors"
+        ]
+      }
+    }
+  },
+  "@types/express": {
+    "versions": {
+      "^4.17.21": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\@types\\express"
+        ]
+      }
+    }
+  },
+  "@types/morgan": {
+    "versions": {
+      "^1.9.9": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\@types\\morgan"
+        ]
+      }
+    }
+  },
+  "@types/node": {
+    "versions": {
+      "^22.5.4": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\@types\\node"
+        ]
+      }
+    }
+  },
+  "ts-node": {
+    "versions": {
+      "^10.9.2": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\ts-node"
+        ]
+      }
+    }
+  },
+  "ts-node-dev": {
+    "versions": {
+      "^2.0.0": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\ts-node-dev"
+        ]
+      }
+    }
+  },
+  "typescript": {
+    "versions": {
+      "^5.5.4": {
+        "locations": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server"
+        ],
+        "lastUsed": "2025-09-18T11:10:43.876Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\External\\sourceyangu\\server\\node_modules\\typescript"
+        ]
+      }
+    }
+  },
+  "lodash": {
+    "versions": {
+      "^4.17.21": {
+        "locations": [
+          "E:\\Main\\Projects\\internal\\bluecore\\example-project",
+          "E:\\Main\\Projects\\internal\\bluecore\\test-project-2"
+        ],
+        "lastUsed": "2025-09-18T08:59:34.204Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\internal\\bluecore\\test-project-2\\node_modules\\lodash"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "versions": {
+      "^27.0.0": {
+        "locations": [
+          "E:\\Main\\Projects\\internal\\bluecore\\example-project"
+        ],
+        "lastUsed": "2025-09-17T20:49:03.718Z",
+        "installPaths": []
+      }
+    }
+  },
+  "@google/generative-ai": {
+    "versions": {
+      "^0.1.3": {
+        "locations": [
+          "E:\\Main\\Projects\\internal\\bluecore"
+        ],
+        "lastUsed": "2025-09-18T12:22:13.301Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\internal\\bluecore\\node_modules\\@google\\generative-ai"
+        ]
+      }
+    }
+  },
+  "chalk": {
+    "versions": {
+      "^4.1.2": {
+        "locations": [
+          "E:\\Main\\Projects\\internal\\bluecore"
+        ],
+        "lastUsed": "2025-09-18T12:22:13.302Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\internal\\bluecore\\node_modules\\chalk"
+        ]
+      }
+    }
+  }
+}

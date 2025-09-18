@@ -1,0 +1,15 @@
+{
+  "lodash": {
+    "versions": {
+      "^4.17.21": {
+        "locations": [
+          "E:\\Main\\Projects\\internal\\bluecore\\test-project-2"
+        ],
+        "lastUsed": "2025-09-18T08:59:34.204Z",
+        "installPaths": [
+          "E:\\Main\\Projects\\internal\\bluecore\\test-project-2\\node_modules\\lodash"
+        ]
+      }
+    }
+  }
+}

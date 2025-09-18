@@ -11,13 +11,14 @@ Bluecore is a package management optimization tool that helps you avoid reinstal
 - Cross-project package management
 - Advanced multithreaded system-wide package search
 - 1000% faster and more accurate package discovery
+- Custom ASCII art banner with blue coloring for better user experience
 
 ## Installation
 
 To install bluecore globally:
 
 ```bash
-npm install -g bluecore
+npm install -g bluecore-pkg
 ```
 
 Or if you're developing it locally:
@@ -65,6 +66,19 @@ bluecore --help
 bluecore -h
 bluecore --version
 bluecore -v
+```
+
+When you run any bluecore command, you'll see a custom ASCII art banner in blue:
+
+```
+██████╗ ██╗               ███████╗
+██╔══██╗██║     ██╔═══██  ██╔════╝
+██████╔╝██║     ██║   ██║ █████╗  
+██╔══██╗██║     ██║   ██║ ██╔══╝  
+██████╔╝███████╗╚██████╔╝ ███████╗
+                                                          
+Package Management Optimization Tool v1.2.2
+Reuse existing packages instead of reinstalling them!
 ```
 
 ## How It Works

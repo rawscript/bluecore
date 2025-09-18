@@ -32,6 +32,21 @@ const {
   showVersion
 } = require('./lib/cli');
 
+// Display banner with blue coloring
+function showBanner() {
+  console.log('\x1b[34m%s\x1b[0m', `
+██████╗ ██╗               ███████╗
+██╔══██╗██║     ██╔═══██  ██╔════╝
+██████╔╝██║     ██║   ██║ █████╗  
+██╔══██╗██║     ██║   ██║ ██╔══╝  
+██████╔╝███████╗╚██████╔╝ ███████╗
+╚═════╝ ╚══════╝ ╚═════╝  ╚══════╝
+                                                          
+Package Management Optimization Tool v1.2.0
+Reuse existing packages instead of reinstalling them!
+  `);
+}
+
 // Function to find existing packages on the system
 async function findExistingPackages() {
   console.log('Searching for existing packages on the system...');
@@ -94,16 +109,19 @@ async function main() {
   
   // Handle help and version flags
   if (args.includes('-h') || args.includes('--help') || args.includes('help')) {
+    showBanner();
     showHelp();
     return;
   }
   
   if (args.includes('-v') || args.includes('--version')) {
+    showBanner();
     showVersion();
     return;
   }
   
   if (args.length === 0) {
+    showBanner();
     showHelp();
     return;
   }
@@ -112,15 +130,19 @@ async function main() {
   
   switch (command) {
     case 'rebase':
+      showBanner();
       await handleRebase();
       break;
     case 'init':
+      showBanner();
       await handleInit();
       break;
     case 'suggest':
+      showBanner();
       await handleSuggest();
       break;
     default:
+      showBanner();
       console.log(`Unknown command: ${command}`);
       showHelp();
   }

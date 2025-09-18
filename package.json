@@ -1,6 +1,6 @@
 {
   "name": "bluecore-pkg",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "description": "Package management optimization tool that reuses existing packages on your system with advanced multithreaded search",
   "main": "index.js",
   "bin": {
@@ -30,15 +30,16 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.1.3"
+    "@google/generative-ai": "^0.1.3",
+    "chalk": "^4.1.2"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/bluecore.git"
+    "url": "git+https://github.com/rawscript/bluecore.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/bluecore/issues"
+    "url": "https://github.com/rawscript/bluecore/issues"
   },
-  "homepage": "https://github.com/your-username/bluecore#readme"
+  "homepage": "https://github.com/rawscript/bluecore#readme"
 }

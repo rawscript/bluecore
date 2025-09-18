@@ -1,6 +1,6 @@
 {
   "name": "bluecore-pkg",
-  "version": "1.2.4",
+  "version": "1.2.7",
   "description": "Package management optimization tool that reuses existing packages on your system with advanced multithreaded search",
   "main": "index.js",
   "bin": {

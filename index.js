@@ -43,7 +43,7 @@ function showBanner() {
 ██████╔╝███████╗╚██████╔╝ ███████╗
 ╚═════╝ ╚══════╝ ╚═════╝  ╚══════╝
                                                           
-Package Management Optimization Tool v1.2.4
+Package Management Optimization Tool v1.2.7
 Reuse existing packages instead of reinstalling them!
   `);
 }

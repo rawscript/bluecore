@@ -77,7 +77,7 @@ When you run any bluecore command, you'll see a custom ASCII art banner in blue:
 ██╔══██╗██║     ██║   ██║ ██╔══╝  
 ██████╔╝███████╗╚██████╔╝ ███████╗
                                                           
-Package Management Optimization Tool v1.2.2
+Package Management Optimization Tool v1.2.3
 Reuse existing packages instead of reinstalling them!
 ```
 
